@@ -1,22 +1,17 @@
-import React, {useState} from 'react';
 import './App.css';
-import { ThemeContext, ThemeContextInterface } from './context/themeContext';
+import { ThemeProvider } from './context/themeContext';
+import Mission from './scenes/Mission';
+
 
 function App() {
-  const [backgroundTheme, setbackgroundtheme] = useState(true);
-
-  const ThemeContextValue: ThemeContextInterface = {
-    lightTheme: backgroundTheme,
-    toggleTheme: () => setbackgroundtheme(!backgroundTheme)
-  }
 
   return (
-    <ThemeContext.Provider value={ThemeContextValue}>
+    <ThemeProvider>
       <div>
-        <h1>hi</h1>
+        <Mission />
       </div>
-    </ThemeContext.Provider>
-      
+    </ThemeProvider>
+
   );
 }
 
