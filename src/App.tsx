@@ -1,15 +1,22 @@
-import './App.css';
-import { ThemeProvider } from './context/themeContext';
+import { ThemeProvider } from './libs/context/themeContext';
 import Mission from './scenes/Mission';
-
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link
+} from "react-router-dom";
 
 function App() {
 
   return (
     <ThemeProvider>
-      <div>
-        <Mission />
-      </div>
+      <Router>
+        <Link to="/mission">Mission</Link>
+        <Routes>
+          <Route path="/mission" element={<Mission/>} />
+        </Routes>
+      </Router>
     </ThemeProvider>
 
   );

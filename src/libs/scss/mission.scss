@@ -1,0 +1,17 @@
+@use './root.scss' as rootCss;
+
+.mission-template {
+    background: red;
+}
+
+@media screen and (min-width: rootCss.$tablet-min-width-portait) {
+    .mission-template {
+        background: blue;
+    }
+}
+
+@media screen and (min-width: rootCss.$tablet-min-width-landscape) {
+    .mission-template {
+        background: green;
+    }
+}
