@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from "react";
-import { IsThemeContextInterface } from "../Interface";
+import { IsThemeContextInterface } from "./Interface";
 
 export const ThemeContext = React.createContext<IsThemeContextInterface | null>(null);
 

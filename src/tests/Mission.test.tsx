@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Mission from '../scenes/Mission';
+import Mission from '../routes/Mission';
 import { ThemeContext } from '../libs/context/themeContext';
-import { IsMissionInterface, IsThemeContextInterface } from '../libs/Interface';
+import { IsMissionInterface, IsThemeContextInterface } from '../libs/context/Interface';
 
 export const MockedContextValues = (): IsThemeContextInterface => {
     const setLightTheme = jest.fn();

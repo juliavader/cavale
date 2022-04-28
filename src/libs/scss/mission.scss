@@ -1,17 +1,18 @@
-@use './root.scss' as rootCss;
+@use "./abstracts/index" as base;
+
 
 .mission-template {
-    background: red;
+    background: base.$main-green;
 }
 
-@media screen and (min-width: rootCss.$tablet-min-width-portait) {
+@media screen and (min-width: base.$tablet-min-width-portait) {
     .mission-template {
-        background: blue;
+        background: base.$main-red;
     }
 }
 
-@media screen and (min-width: rootCss.$tablet-min-width-landscape) {
+@media screen and (min-width: base.$tablet-min-width-landscape) {
     .mission-template {
-        background: green;
+        background: base.$main-yellow;
     }
 }

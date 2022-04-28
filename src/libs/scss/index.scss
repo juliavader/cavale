@@ -1,0 +1,17 @@
+@use "./abstracts/index" as base;
+@forward "./components/mission-card.scss";
+
+h1,h2,h3,h4,h5,h6,button {
+    font-family: Porter;
+}
+
+p, a {
+    font-family: Helvetica Neue;
+}
+
+.list-missions{
+    &__header {
+        height: 20%;
+        background-color: base.$main-yellow;
+    }
+}

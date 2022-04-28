@@ -1,0 +1,25 @@
+@use "../abstracts/index" as base;
+
+.mission-card {
+    width: 80%;
+    border-top: 10px solid base.$main-yellow ;
+    border-radius: 5px;
+    padding: 0.9rem;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    &__title{
+        color: base.$main-yellow;
+    }
+    &__descritption{
+        color: base.$main-dark_gray;
+        text-transform: capitalize;
+    }
+    &__button {
+        padding: 10px 5px;
+        background: base.$main-dark-gray;
+        color: base.$white;
+        border: none;
+        min-width: min-content;
+        width: 6rem;
+        border-radius: 5px;
+    }
+}

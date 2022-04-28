@@ -4,10 +4,24 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import {
+  Route,
+  Routes,
+  BrowserRouter
+} from "react-router-dom";
+import Mission from './routes/Mission';
+
+import "./libs/scss/normalize.css";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/mission" element={<Mission/>} />
+          </Routes>
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

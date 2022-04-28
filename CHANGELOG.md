@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - typescript pwa
 - Adding views and a Theme Context.
+- adding json mission file structure. Adding Mission context. Adding layout for mission page.
